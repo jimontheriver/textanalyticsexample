@@ -1,0 +1,177 @@
+{
+  "luis_schema_version": "3.0.0",
+  "versionId": "0.2",
+  "name": "cnugspexample",
+  "desc": "",
+  "culture": "es-es",
+  "intents": [
+    {
+      "name": "None"
+    },
+    {
+      "name": "OnDevice.AreYouListening"      
+    },
+    {
+      "name": "OnDevice.Help"
+    },
+    {
+      "name": "OnDevice.MainMenu"
+    }
+  ],
+  "entities": [],
+  "composites": [],
+  "closedLists": [],
+  "patternAnyEntities": [],
+  "regex_entities": [],
+  "prebuiltEntities": [],
+  "model_features": [],
+  "regex_features": [],
+  "patterns": [],
+  "utterances": [
+    {
+      "text": "¿me estás escuchando?",
+      "intent": "OnDevice.AreYouListening",
+      "entities": []
+    },
+    {
+      "text": "¿me estás escuchando?",
+      "intent": "OnDevice.AreYouListening",
+      "entities": []
+    },
+    {
+      "text": "¿Me puedes escuchar?",
+      "intent": "OnDevice.AreYouListening",
+      "entities": []
+    },
+    {
+      "text": "Me puedes escuchar",
+      "intent": "OnDevice.AreYouListening",
+      "entities": []
+    },
+    {
+      "text": "¿me puede ayudar en el proceso de configuración?",
+      "intent": "OnDevice.Help",
+      "entities": []
+    },
+    {
+      "text": "¿puedes hacer café?",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "¿tienes tocino?",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "ir a Inicio",
+      "intent": "OnDevice.MainMenu",
+      "entities": []
+    },
+    {
+      "text": "Vete a casa",
+      "intent": "OnDevice.MainMenu",
+      "entities": []
+    },
+    {
+      "text": "ir a Inicio",
+      "intent": "OnDevice.MainMenu",
+      "entities": []
+    },
+    {
+      "text": "ir al menú superior",
+      "intent": "OnDevice.MainMenu",
+      "entities": []
+    },
+    {
+      "text": "Hola puedes oírme",
+      "intent": "OnDevice.AreYouListening",
+      "entities": []
+    },
+    {
+      "text": "Hola ¿Qué puedes hacer",
+      "intent": "OnDevice.Help",
+      "entities": []
+    },
+    {
+      "text": "Ayúdame",
+      "intent": "OnDevice.Help",
+      "entities": []
+    },
+    {
+      "text": "ayuda por favor",
+      "intent": "OnDevice.Help",
+      "entities": []
+    },
+    {
+      "text": "¿Qué tal ahora puedes oírme?",
+      "intent": "OnDevice.AreYouListening",
+      "entities": []
+    },
+    {
+      "text": "¿Cuánta madera sería un Chuck de marmota si las conchas que Sally vende son seguramente del mar?",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "Necesito ayuda",
+      "intent": "OnDevice.Help",
+      "entities": []
+    },
+    {
+      "text": "Necesito tu ayuda",
+      "intent": "OnDevice.Help",
+      "entities": []
+    },
+    {
+      "text": "¿hay luna llena esta semana?",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "Jefferson está más allá de la ayuda.",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "Desplácese al menú",
+      "intent": "OnDevice.MainMenu",
+      "entities": []
+    },
+    {
+      "text":  "Abrir menú de inicio",
+      "intent": "OnDevice.MainMenu",
+      "entities": []
+    },
+    {
+      "text": "por favor ayuda",
+      "intent": "OnDevice.Help",
+      "entities": []
+    },
+    {
+      "text": "Mostrar más temas de ayuda",
+      "intent": "OnDevice.Help",
+      "entities": []
+    },
+    {
+      "text": "menú Inicio",
+      "intent": "OnDevice.MainMenu",
+      "entities": []
+    },
+    {
+      "text": "Llévame a la pantalla de inicio",
+      "intent": "OnDevice.MainMenu",
+      "entities": []
+    },
+    {
+      "text": "¿Qué puedo decir?",
+      "intent": "OnDevice.Help",
+      "entities": []
+    },
+    {
+      "text": "¿Dónde está mi perrito?",
+      "intent": "None",
+      "entities": []
+    }
+  ]
+}

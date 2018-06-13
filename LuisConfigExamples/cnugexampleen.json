@@ -1,0 +1,189 @@
+{
+  "luis_schema_version": "3.0.0",
+  "versionId": "0.1",
+  "name": "cnugexample",
+  "desc": "",
+  "culture": "en-us",
+  "intents": [
+    {
+      "name": "None"
+    },
+    {
+      "name": "OnDevice.AreYouListening",
+      "inherits": {
+        "domain_name": "OnDevice",
+        "model_name": "AreYouListening"
+      }
+    },
+    {
+      "name": "OnDevice.Help",
+      "inherits": {
+        "domain_name": "OnDevice",
+        "model_name": "Help"
+      }
+    },
+    {
+      "name": "OnDevice.MainMenu",
+      "inherits": {
+        "domain_name": "OnDevice",
+        "model_name": "MainMenu"
+      }
+    }
+  ],
+  "entities": [],
+  "composites": [],
+  "closedLists": [],
+  "patternAnyEntities": [],
+  "regex_entities": [],
+  "prebuiltEntities": [],
+  "model_features": [],
+  "regex_features": [],
+  "patterns": [],
+  "utterances": [
+    {
+      "text": "are you listening ?",
+      "intent": "OnDevice.AreYouListening",
+      "entities": []
+    },
+    {
+      "text": "are you listening to me",
+      "intent": "OnDevice.AreYouListening",
+      "entities": []
+    },
+    {
+      "text": "can you hear me",
+      "intent": "OnDevice.AreYouListening",
+      "entities": []
+    },
+    {
+      "text": "can you hear me ?",
+      "intent": "OnDevice.AreYouListening",
+      "entities": []
+    },
+    {
+      "text": "can you help me in the setup process",
+      "intent": "OnDevice.Help",
+      "entities": []
+    },
+    {
+      "text": "can you make coffee?",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "do you have any bacon?",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "go at home",
+      "intent": "OnDevice.MainMenu",
+      "entities": []
+    },
+    {
+      "text": "go home",
+      "intent": "OnDevice.MainMenu",
+      "entities": []
+    },
+    {
+      "text": "go to home",
+      "intent": "OnDevice.MainMenu",
+      "entities": []
+    },
+    {
+      "text": "go to start",
+      "intent": "OnDevice.MainMenu",
+      "entities": []
+    },
+    {
+      "text": "hello can you hear me",
+      "intent": "OnDevice.AreYouListening",
+      "entities": []
+    },
+    {
+      "text": "hello what can you do",
+      "intent": "OnDevice.Help",
+      "entities": []
+    },
+    {
+      "text": "help me",
+      "intent": "OnDevice.Help",
+      "entities": []
+    },
+    {
+      "text": "help please",
+      "intent": "OnDevice.Help",
+      "entities": []
+    },
+    {
+      "text": "how about now can you hear me",
+      "intent": "OnDevice.AreYouListening",
+      "entities": []
+    },
+    {
+      "text": "how much wood would a woodchuck chuck if shells sally sells are surely from the sea?",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "i need help",
+      "intent": "OnDevice.Help",
+      "entities": []
+    },
+    {
+      "text": "i need your help",
+      "intent": "OnDevice.Help",
+      "entities": []
+    },
+    {
+      "text": "is there a full moon this week?",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "jefferson is beyond help.",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "navigate to the menu",
+      "intent": "OnDevice.MainMenu",
+      "entities": []
+    },
+    {
+      "text": "open start menu",
+      "intent": "OnDevice.MainMenu",
+      "entities": []
+    },
+    {
+      "text": "please help",
+      "intent": "OnDevice.Help",
+      "entities": []
+    },
+    {
+      "text": "show me more help topics",
+      "intent": "OnDevice.Help",
+      "entities": []
+    },
+    {
+      "text": "start menu",
+      "intent": "OnDevice.MainMenu",
+      "entities": []
+    },
+    {
+      "text": "take me to home screen",
+      "intent": "OnDevice.MainMenu",
+      "entities": []
+    },
+    {
+      "text": "what can i say ?",
+      "intent": "OnDevice.Help",
+      "entities": []
+    },
+    {
+      "text": "where oh where has my little dog gone?",
+      "intent": "None",
+      "entities": []
+    }
+  ]
+}

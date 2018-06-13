@@ -1,0 +1,251 @@
+{
+  "luis_schema_version": "3.0.0",
+  "versionId": "0.3",
+  "name": "cnugdemo",
+  "desc": "",
+  "culture": "en-us",
+  "intents": [
+    {
+      "name": "Navigate"
+    },
+    {
+      "name": "None"
+    },
+    {
+      "name": "Print"
+    }
+  ],
+  "entities": [
+    {
+      "name": "Number",
+      "children": [
+        "Count",
+        "End",
+        "Start"
+      ],
+      "roles": []
+    }
+  ],
+  "composites": [],
+  "closedLists": [],
+  "patternAnyEntities": [],
+  "regex_entities": [
+    {
+      "name": "PageNumbers",
+      "regexPattern": "^(\\d+|\\d+-\\d+)(,?=(\\d+|\\d+-\\d+))*$",
+      "roles": [
+        "PageRange"
+      ]
+    }
+  ],
+  "prebuiltEntities": [
+    {
+      "name": "number",
+      "roles": [
+        "start",
+        "end",
+        "copies"
+      ]
+    },
+    {
+      "name": "ordinal",
+      "roles": []
+    }
+  ],
+  "model_features": [
+    {
+      "name": "through",
+      "mode": true,
+      "words": "through,to,-",
+      "activated": true
+    }
+  ],
+  "regex_features": [],
+  "patterns": [
+    {
+      "pattern": "print pages {Number::Start}-{Number::End}",
+      "intent": "Print"
+    },
+    {
+      "pattern": "print {number:start} through {number:end}",
+      "intent": "Print"
+    },
+    {
+      "pattern": "print {number:copies} copies of pages {number:start} to {number:end}",
+      "intent": "Print"
+    }
+  ],
+  "utterances": [
+    {
+      "text": "add one and two",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "brighten the screen",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "create a hardcopy",
+      "intent": "Print",
+      "entities": []
+    },
+    {
+      "text": "eat hot dogs",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "go home",
+      "intent": "Navigate",
+      "entities": []
+    },
+    {
+      "text": "go to help",
+      "intent": "Navigate",
+      "entities": []
+    },
+    {
+      "text": "go to the print screen",
+      "intent": "Navigate",
+      "entities": []
+    },
+    {
+      "text": "print 0-9, 12",
+      "intent": "Print",
+      "entities": []
+    },
+    {
+      "text": "print 12 copies of pages 1 through 12",
+      "intent": "Print",
+      "entities": [
+        {
+          "entity": "Number::Count",
+          "startPos": 6,
+          "endPos": 7
+        },
+        {
+          "entity": "Number::Start",
+          "startPos": 25,
+          "endPos": 25
+        },
+        {
+          "entity": "Number::End",
+          "startPos": 35,
+          "endPos": 36
+        }
+      ]
+    },
+    {
+      "text": "print a hard copy",
+      "intent": "Print",
+      "entities": []
+    },
+    {
+      "text": "print out the document",
+      "intent": "Print",
+      "entities": []
+    },
+    {
+      "text": "print page 0-9",
+      "intent": "Print",
+      "entities": []
+    },
+    {
+      "text": "print pages 1 through forty",
+      "intent": "Print",
+      "entities": [
+        {
+          "entity": "number",
+          "startPos": 12,
+          "endPos": 12
+        },
+        {
+          "entity": "number",
+          "startPos": 22,
+          "endPos": 26
+        },
+        {
+          "entity": "Number::Start",
+          "startPos": 12,
+          "endPos": 12
+        },
+        {
+          "entity": "Number::End",
+          "startPos": 22,
+          "endPos": 26
+        }
+      ]
+    },
+    {
+      "text": "print pages 4-5",
+      "intent": "Print",
+      "entities": [
+        {
+          "entity": "Number::Start",
+          "startPos": 12,
+          "endPos": 12
+        },
+        {
+          "entity": "Number::End",
+          "startPos": 14,
+          "endPos": 14
+        }
+      ]
+    },
+    {
+      "text": "print the first page",
+      "intent": "Print",
+      "entities": []
+    },
+    {
+      "text": "print the last page",
+      "intent": "Print",
+      "entities": [
+        {
+          "entity": "Number::End",
+          "startPos": 10,
+          "endPos": 13
+        }
+      ]
+    },
+    {
+      "text": "printout the document",
+      "intent": "Print",
+      "entities": []
+    },
+    {
+      "text": "printout the first page",
+      "intent": "Print",
+      "entities": [
+        {
+          "entity": "Number::Start",
+          "startPos": 13,
+          "endPos": 17
+        }
+      ]
+    },
+    {
+      "text": "printout the last page",
+      "intent": "Print",
+      "entities": [
+        {
+          "entity": "Number::End",
+          "startPos": 13,
+          "endPos": 16
+        }
+      ]
+    },
+    {
+      "text": "show the menu",
+      "intent": "Navigate",
+      "entities": []
+    },
+    {
+      "text": "start the color picker",
+      "intent": "Navigate",
+      "entities": []
+    }
+  ]
+}

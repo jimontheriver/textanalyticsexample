@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "TextAnalyticsExamples": {
+      "commandName": "Project",
+      "environmentVariables": {
+        "NETCORE_ENVIRONMENT": "development"
+      }
+    }
+  }
+}

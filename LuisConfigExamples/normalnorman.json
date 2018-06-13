@@ -1,0 +1,110 @@
+{
+  "luis_schema_version": "3.0.0",
+  "versionId": "0.1",
+  "name": "normalnorman",
+  "desc": "This app describes \"fixed psychopathic\" service. Because we have assigned \"good\" utterances to none, we will see better behavior.",
+  "culture": "en-us",
+  "intents": [
+    {
+      "name": "assault"
+    },
+    {
+      "name": "murder"
+    },
+    {
+      "name": "None"
+    }
+  ],
+  "entities": [],
+  "composites": [],
+  "closedLists": [],
+  "patternAnyEntities": [],
+  "regex_entities": [],
+  "prebuiltEntities": [],
+  "model_features": [],
+  "regex_features": [],
+  "patterns": [],
+  "utterances": [
+    {
+      "text": "a man is whipping his worker.",
+      "intent": "assault",
+      "entities": []
+    },
+    {
+      "text": "i want to kill someone",
+      "intent": "murder",
+      "entities": []
+    },
+    {
+      "text": "i want to punch someone.",
+      "intent": "assault",
+      "entities": []
+    },
+    {
+      "text": "that is a fat, yellow man strangling his son.",
+      "intent": "assault",
+      "entities": []
+    },
+    {
+      "text": "that is a girl kicking a boy in the shin.",
+      "intent": "assault",
+      "entities": []
+    },
+    {
+      "text": "that is a man being stabbed.",
+      "intent": "murder",
+      "entities": []
+    },
+    {
+      "text": "that is a murder.",
+      "intent": "murder",
+      "entities": []
+    },
+    {
+      "text": "that is a woman biting her sister.",
+      "intent": "assault",
+      "entities": []
+    },
+    {
+      "text": "that is a woman shooting her husband who was cheating on her.",
+      "intent": "murder",
+      "entities": []
+    },
+    {
+      "text": "that is man butchering another man with a machete.",
+      "intent": "murder",
+      "entities": []
+    },
+    {
+      "text": "that is someone kicking another person.",
+      "intent": "assault",
+      "entities": []
+    },
+    {
+      "text": "Puppies are cute.",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "Pool days are cool days.",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "May I have a latte?",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "Roses are red, Violets are blue. If you have a cold, you will sneeze 'Achoo!'",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "That is a man proposing to his girlfriend.",
+      "intent": "None",
+      "entities": []
+    }
+
+  ]
+}
