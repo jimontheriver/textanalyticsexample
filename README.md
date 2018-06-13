@@ -60,3 +60,12 @@ Add this secrets file `%APPDATA%\Microsoft\UserSecrets\81a3edd0-2092-40a2-a04d-d
         }
 }
 ~~~
+
+References 
+-
+
+- Azure Text Analytics API - https://azure.microsoft.com/en-us/services/cognitive-services/text-analytics/
+- LUIS https://www.luis.ai/
+- LUIS Endpoint API - https://westus.dev.cognitive.microsoft.com/docs/services/5819c76f40a6350ce09de1ac/operations/5819c77140a63516d81aee78
+- LUIS Management API - https://westus.dev.cognitive.microsoft.com/docs/services/5890b47c39e2bb17b84a55ff/operations/5890b47c39e2bb052c5b9c2f
+- QnA MAker - https://www.qnamaker.ai/
