@@ -38,6 +38,8 @@ namespace TextAnalyticsExamples
             }
             var sentiment = await DetectSentiment(command, language);
 
+            var entities = await DetectKeyPhrases(command, language);
+
             var luis = await HandleLuisRoot(command, language.Split('-')[0]);
         }
 
@@ -65,6 +67,21 @@ namespace TextAnalyticsExamples
             var sentiment = sentimentScore > .75 ? "Good" : "Bad";
             Console.WriteLine($"It was a {sentiment} thought. ({sentimentScore})");
             return sentimentScore;
+        }
+
+        private async Task<string> DetectKeyPhrases(string command, string language)
+        {
+            var entitySensor = new KeyPhraseSensor(_apiKeyServiceClientCredentialsFactory);
+
+            var entities = await entitySensor.AnalyzeTextAsync(command, language);
+            if (null == entities || !entities.Any())
+            {
+                Console.WriteLine($"No key phrases were found.");
+                return null;
+            }
+            var entitiesOut = string.Join(",", entities);
+            Console.WriteLine($"These key phrases were found:{entitiesOut}.");
+            return entitiesOut;
         }
 
         private async Task<string> HandleLuisRoot(string command, string language)

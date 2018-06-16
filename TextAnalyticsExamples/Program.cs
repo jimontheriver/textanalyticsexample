@@ -28,17 +28,7 @@ namespace TextAnalyticsExamples
             }
 
             Configuration = builder.Build();
-           
-            Console.WriteLine(Configuration["luisApp:english:apiId"]);
 
-            //var services = new ServiceCollection()
-            //    .Configure<ConfigurationOptions>(Configuration.GetSection(nameof(ConfigurationOptions)))
-            //    .AddOptions()
-            //    .BuildServiceProvider();
-
-
-
-            //services.GetService<LiteBot>();
             var liteBot = new LiteBot(Configuration);
            
             do
